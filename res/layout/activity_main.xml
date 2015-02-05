@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue1"
+    android:gravity="fill"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="28dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="28dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zoeb.regen.regen.MainActivity"
+    tools:ignore="Orientation" >
+
+           <Button
+               android:id="@+id/sma"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/cap"
+               android:layout_alignBottom="@+id/cap"
+               android:layout_toRightOf="@+id/cap"
+               android:text="Small"
+               android:gravity="center"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/num"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignBottom="@+id/sma"
+               android:layout_alignTop="@+id/sma"
+               android:layout_toRightOf="@+id/sma"
+               android:text="Num"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/spe"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/cap"
+               android:layout_alignStart="@+id/cap"
+               android:layout_below="@+id/cap"
+               android:layout_toLeftOf="@+id/sma"
+               android:layout_toStartOf="@+id/sma"
+               android:text="Special"
+               tools:ignore="HardcodedText" />
+
+           <Button
+               android:id="@+id/any"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/spe"
+               android:layout_alignBottom="@+id/spe"
+               android:layout_toLeftOf="@+id/num"
+               android:text="Any"
+               android:gravity="center"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/cle"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/any"
+               android:layout_alignBottom="@+id/any"
+               android:layout_toRightOf="@+id/any"
+               android:text="Clear"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/copy"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/spe"
+               android:layout_toRightOf="@+id/spe"
+               android:gravity="center"
+               android:text="Copy"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/abo"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/copy"
+               android:layout_toLeftOf="@+id/cle"
+               android:gravity="center"
+               android:text="About"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/textView1"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="29dp"
+               android:ems="10"
+               android:hint="Regular Expression"
+               android:maxLines="3"
+               android:scrollbars="vertical"
+               android:textSize="20sp"
+               tools:ignore="HardcodedText" />
+
+           <Button
+               android:id="@+id/cap"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textView2"
+               android:layout_centerVertical="true"
+               android:text="Capital"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="fill_parent"
+               android:layout_height="100dp"
+               android:layout_above="@+id/sma"
+               android:layout_alignLeft="@+id/cap"
+               android:layout_alignRight="@+id/textView2"
+               android:hint="Text|Password"
+               android:maxLines="3"
+               android:scrollbars="vertical"
+               android:textSize="20sp"
+               tools:ignore="RtlHardcoded,HardcodedText" />
+
+           <Button
+               android:id="@+id/del"
+               android:layout_width="50dp"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/cle"
+               android:layout_alignRight="@+id/cle"
+               android:layout_below="@+id/cle"
+               android:text="Del"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+           <Button
+               android:id="@+id/ref"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/abo"
+               android:layout_alignLeft="@+id/spe"
+               android:layout_toLeftOf="@+id/copy"
+               android:gravity="center"
+               android:text="Refresh"
+               tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>
