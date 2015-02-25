@@ -159,8 +159,8 @@ public class MainActivity extends Activity {
                 }
                 else if (temp == '*')
                 {
-                    char[] any = {'@','a','A','N'};
-                    temp = any[rand.nextInt(3)];
+                    char[] any = {'@','a','A','0'};
+                    temp = any[rand.nextInt(4)];
                     x--;
                 }
             }
