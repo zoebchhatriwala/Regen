@@ -1,2 +1,5 @@
 # Regen
-Regen is a Regular Expression based Text|Password Generator Developed in Android Programming Language.
+Regen is a Custom Regular Expression based Text|Password Generator Developed in Android Programming Language.
+<br />
+<br />
+--- Developed For Learning Purpose ---
